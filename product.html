@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Product</title>
+	<title>Hawaii Clothing</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -80,7 +80,8 @@
 					<div class="menu-desktop">
 						<ul class="main-menu">
 							<li>
-								<a href="index.html">Home</a>							
+								<a href="index.html">Home</a>
+					
 							</li>
 
 							<li class="active-menu">
@@ -186,8 +187,8 @@
 
 			<ul class="main-menu-m">
 				<li>
-					<a href="home-02.html">Home</a>
-					
+					<a href="index.html">Home</a>
+				
 					<span class="arrow-main-menu-m">
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
 					</span>
@@ -256,11 +257,11 @@
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								White Shirt Pleat
+								Esprit Ruffle Shirt
 							</a>
 
 							<span class="header-cart-item-info">
-								1 x LKR 1,500
+								1 x LKR 1500.00
 							</span>
 						</div>
 					</li>
@@ -276,7 +277,7 @@
 							</a>
 
 							<span class="header-cart-item-info">
-								1 x LKR 2,800
+								1 x LKR 5000.00
 							</span>
 						</div>
 					</li>
@@ -288,11 +289,11 @@
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Nixon Porter Leather
+								Vintage Inspired Classic
 							</a>
 
 							<span class="header-cart-item-info">
-								1 x LKR 3,500
+								1 x LKR 3750.00
 							</span>
 						</div>
 					</li>
@@ -300,7 +301,7 @@
 				
 				<div class="w-full">
 					<div class="header-cart-total w-full p-tb-40">
-						Total: LKR 7,800
+						Total: LKR 10550.00
 					</div>
 
 					<div class="header-cart-buttons flex-w w-full">
@@ -1403,10 +1404,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!--===============================================================================================-->
 	<script src="vendor/select2/select2.min.js"></script>
 	<script>
-		LKR (".js-select2").each(function(){
-			LKR (this).select2({
+		$ (".js-select2").each(function(){
+			$ (this).select2({
 				minimumResultsForSearch: 20,
-				dropdownParent: LKR (this).next('.dropDownSelect2')
+				dropdownParent: $ (this).next('.dropDownSelect2')
 			});
 		})
 	</script>
@@ -1419,13 +1420,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!--===============================================================================================-->
 	<script src="vendor/parallax100/parallax100.js"></script>
 	<script>
-        LKR ('.parallax100').parallax100();
+        $ ('.parallax100').parallax100();
 	</script>
 <!--===============================================================================================-->
 	<script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
 	<script>
-		LKR ('.gallery-lb').each(function() { // the containers for all your galleries
-			LKR (this).magnificPopup({
+		$ ('.gallery-lb').each(function() { // the containers for all your galleries
+			$ (this).magnificPopup({
 		        delegate: 'a', // the selector for gallery item
 		        type: 'image',
 		        gallery: {
@@ -1440,36 +1441,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!--===============================================================================================-->
 	<script src="vendor/sweetalert/sweetalert.min.js"></script>
 	<script>
-		LKR ('.js-addwish-b2, .js-addwish-detail').on('click', function(e){
+		$ ('.js-addwish-b2, .js-addwish-detail').on('click', function(e){
 			e.preventDefault();
 		});
 
-		LKR ('.js-addwish-b2').each(function(){
-			var nameProduct = LKR (this).parent().parent().find('.js-name-b2').html();
-			LKR (this).on('click', function(){
+		$ ('.js-addwish-b2').each(function(){
+			var nameProduct = $ (this).parent().parent().find('.js-name-b2').html();
+			$ (this).on('click', function(){
 				swal(nameProduct, "is added to wishlist !", "success");
 
-				LKR (this).addClass('js-addedwish-b2');
-				LKR (this).off('click');
+				$ (this).addClass('js-addedwish-b2');
+				$ (this).off('click');
 			});
 		});
 
-		LKR ('.js-addwish-detail').each(function(){
-			var nameProduct = LKR (this).parent().parent().parent().find('.js-name-detail').html();
+		$ ('.js-addwish-detail').each(function(){
+			var nameProduct = $ (this).parent().parent().parent().find('.js-name-detail').html();
 
-			LKR (this).on('click', function(){
+			$ (this).on('click', function(){
 				swal(nameProduct, "is added to wishlist !", "success");
 
-				LKR (this).addClass('js-addedwish-detail');
-				LKR (this).off('click');
+				$ (this).addClass('js-addedwish-detail');
+				$ (this).off('click');
 			});
 		});
 
 		/*---------------------------------------------*/
 
-		LKR ('.js-addcart-detail').each(function(){
-			var nameProduct = LKR (this).parent().parent().parent().parent().find('.js-name-detail').html();
-			LKR (this).on('click', function(){
+		$ ('.js-addcart-detail').each(function(){
+			var nameProduct = $ (this).parent().parent().parent().parent().find('.js-name-detail').html();
+			$ (this).on('click', function(){
 				swal(nameProduct, "is added to cart !", "success");
 			});
 		});
@@ -1478,16 +1479,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!--===============================================================================================-->
 	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 	<script>
-		LKR ('.js-pscroll').each(function(){
-			LKR (this).css('position','relative');
-			LKR (this).css('overflow','hidden');
+		$ ('.js-pscroll').each(function(){
+			$ (this).css('position','relative');
+			$ (this).css('overflow','hidden');
 			var ps = new PerfectScrollbar(this, {
 				wheelSpeed: 1,
 				scrollingThreshold: 1000,
 				wheelPropagation: false,
 			});
 
-			LKR (window).on('resize', function(){
+			$ (window).on('resize', function(){
 				ps.update();
 			})
 		});
