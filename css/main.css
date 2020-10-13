@@ -621,6 +621,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
     .wrap-search-header {
         height: 90px;
     }
+
 }
 
 @media (max-width: 575px) {
@@ -634,6 +635,21 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
     .wrap-search-header {
         height: 80px;
     }
+    .profile-userpic i {
+        font-size: 60px !important;
+        width: 100% !important;
+    }
+    .profile-usertitle-name {
+        font-size: 12px !important;
+    }
+    .profile-usertitle-job {
+        font-size: 10px !important;
+ 
+    }
+    .p-pd-n {
+       display: flow-root !important;
+    }
+
 }
 
 
@@ -3808,9 +3824,6 @@ input.num-product::-webkit-inner-spin-button {
     border-radius: 50% !important;
   }
   
-  .profile-userpic img {
- 
-  }
   
   .profile-usertitle {
     text-align: center;
