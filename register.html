@@ -165,15 +165,22 @@
 				</li>
 
 				<li>
-					<div class="right-top-bar flex-w h-full">
-						<a href="#" class="flex-c-m p-lr-10 trans-04">
-							Help & FAQs
-						</a>
-
-						<a href="login.html" class="flex-c-m p-lr-10 trans-04">
+				 <div class="right-top-bar flex-w h-full">
+						    <a href="#" class="flex-c-m p-lr-10 trans-04">
+							    Help & FAQs
+						    </a>
+                    
+						<a href="register.html" class="flex-c-m p-lr-10 trans-04">
 							My Account
-						</a>
-
+                        </a>
+                        <!-- <ul class="sub-menu">
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Sign In</a></li>
+                         </ul>
+                        <span class="arrow-menu-mobile-m">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span> -->
+                    
 						<a href="#" class="flex-c-m p-lr-10 trans-04">
 							EN
 						</a>
@@ -344,19 +351,58 @@
 				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
 					<form>
 						<h4 class="mtext-105 cl2 txt-center p-b-30">
-							Login Here
-						</h4>
+							Sign Up
+                        </h4>
+                            <div class="form-row mb-4">
+                                <div class="col">
+                                    <!-- First name -->
+                                     <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" required>
+                                </div>
+                                <div class="col">
+                                    <!-- Last name -->
+                                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" required>
+                                </div>
+                            </div>
+                            <div class="form-row mb-4">
+                                <div class="col">
+                                    <!-- Email -->
+                                     <input type="text" id="defaultRegisterFormEmail" class="form-control" placeholder="Email"required='should not contain capitals'>
+                                </div>
+                            </div>
+                            <div class="form-row mb-4">
+                                <div class="col">
+                                    <!-- Phone -->
+                                     <input type="text" id="defaultRegisterFormPhone" class="form-control" placeholder="Phone">
+                                </div>
+                                <div class="col">
+                                    <!-- Gender -->
+                                    <select class="browser-default custom-select" id="defaultRegisterFormSelect">
+                                        <option selected>Sex</option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="form-row mb-4">
+                                <div class="col">
+                                    <!-- Address -->
+                                     <textarea name="" id="defaultRegisterFormAddress" class="form-control" rows="3" placeholder="Delivery Address"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row mb-4">
+                                <div class="col">
+                                    <!-- Password -->
+                                     <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <!-- Re-Password -->
+                                     <input type="password" id="defaultRegisterFormRePassword" class="form-control" placeholder="Re-enter Password">
+                                </div>
+							</div>
+							<br>
 
-						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address">
-							<!-- <img class="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON"> -->
-						</div>
-						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="password" name="pass" placeholder="Password Here">
-							<!-- <img class="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON"> -->
-						</div>
-						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer"> 
-							Login
+						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer register" onclick="swal('ok')">
+							Sign Up
 						</button>
 					</form>
 				</div>
@@ -594,6 +640,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				$(this).off('click');
 			});
 		});
+        
+
 
 		/*---------------------------------------------*/
 
@@ -624,6 +672,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
+	<
 
 </body>
 </html>
