@@ -3839,7 +3839,7 @@ input.num-product::-webkit-inner-spin-button {
   
   .profile-usertitle-job {
     text-transform: uppercase;
-    color: #5b9bd1;
+    color: #f9ba48;
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -3909,5 +3909,8 @@ input.num-product::-webkit-inner-spin-button {
 
 .p-pd-n{
     padding: 0 10px;
+}
+.cl13 {
+    color: #f9ba48;
 }
   /* END PROFILE */
