@@ -318,64 +318,79 @@
 		<div class="container">
 			<div class="flex-c flex-tr">
 				<div class="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
-					<form>
+					<form method="GET" action="login.html">
 						<h4 class="mtext-105 cl2 txt-center p-b-30">
 							Sign Up
                         </h4>
                             <div class="form-row mb-4">
                                 <div class="col">
                                     <!-- First name -->
-                                     <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" required>
+								<input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" required>
                                 </div>
                                 <div class="col">
                                     <!-- Last name -->
-                                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" required>
+									<input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" required >
+								
                                 </div>
                             </div>
                             <div class="form-row mb-4">
                                 <div class="col">
                                     <!-- Email -->
-                                     <input type="text" id="defaultRegisterFormEmail" class="form-control" placeholder="Email"required='should not contain capitals'>
+									 <input type="email" id="defaultRegisterFormEmail" class="form-control" placeholder="Email" required>
+									 
                                 </div>
                             </div>
                             <div class="form-row mb-4">
                                 <div class="col">
                                     <!-- Phone -->
-                                     <input type="text" id="defaultRegisterFormPhone" class="form-control" placeholder="Phone">
+                                     <input type="text" id="defaultRegisterFormPhone" class="form-control" placeholder="Phone" required>
                                 </div>
                                 <div class="col">
                                     <!-- Gender -->
-                                    <select class="browser-default custom-select" id="defaultRegisterFormSelect">
-                                        <option selected>Sex</option>
+                                    <select class="browser-default custom-select" id="defaultRegisterFormSelect" required>
+                                        <option selected>Gender</option>
                                         <option value="1">Male</option>
                                         <option value="2">Female</option>
                                       </select>
                                 </div>
                             </div>
-                            <div class="form-row mb-4">
+                            <div class="form-row mb-7">
                                 <div class="col">
                                     <!-- Address -->
-                                     <textarea name="" id="defaultRegisterFormAddress" class="form-control" rows="3" placeholder="Delivery Address"></textarea>
-                                </div>
-                            </div>
+                                    <input type="text" id="defaultRegisterFormStreet" class="form-control" placeholder="Street" required>
+								</div>
+								<div class="col">
+									<!--City-->
+									<input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City" required>
+								</div>
+								<div class="col">
+									<!--Zip-->
+									<input type="text" id="defaultRegisterFormZip" class="form-control" placeholder="Zip" required>
+								</div>
+							</div>
+							<br>
                             <div class="form-row mb-4">
                                 <div class="col">
                                     <!-- Password -->
-                                     <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password">
+                                     <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" minlength="8" required>
                                 </div>
                                 <div class="col">
                                     <!-- Re-Password -->
-                                     <input type="password" id="defaultRegisterFormRePassword" class="form-control" placeholder="Re-enter Password">
+                                     <input type="password" id="defaultRegisterFormRePassword" class="form-control" placeholder="Re-enter Password" minlength="8" required>
                                 </div>
 							</div>
+
 							<br>
-
-						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer register" onclick="swal('ok')">
-							Sign Up
-						</button>
-					</form>
+							<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer register" type="submit">Sign Up</button>
+							<br>
+						<div class="form-group">
+							<div class="col">
+								<h6 class="mtext-20 cl2 txt-center p-b-30">Already have an account?<a href="login.html">Sign In</a></h6>
+							</div>
+						</div>
+						
+					</form> 
 				</div>
-
 
 			</div>
 		</div>
@@ -642,7 +657,95 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-	<
+<!--===============================================================================================-->
+// <script>
+// const form = document.getElementsByTagName('form')[0];
+// const email = document.getElementById('defaultRegisterFormEmail');
+// const password = document.getElementById('');
+// const repassword = document.getElementById('');
+// const phone = document.getElementById('');
+// const emailError = document.querySelector('#defaultRegisterFormEmail + span.error');
+// const passwordError = document.querySelector('#defaultRegisterFormEmail + span.error');
+
+// email.addEventListener('input',function (event){
+
+// 	if(email.validity.valid){
+// 		emailError.innerHTML='';
+// 		emailError.className='error'
+// 	} else {
+// 		showErrorEmail();
+// 	}
+// });
+
+// password.addEventListener('input',function (event){
+
+// if(password.validity.valid){
+// 	passwordError.innerHTML='';
+// 	passwordError.className='error'
+// } else {
+// 	showErrorPassword();
+// }
+// });
+
+// form.addEventListener('submit', function (event) {
+//   // if the email field is valid, we let the form submit
+
+//   if(!email.validity.valid) {
+//     // If it isn't, we display an appropriate error message
+//     showErrorEmail();
+//     // Then we prevent the form from being sent by canceling the event
+//     event.preventDefault();
+//   } else if(!password.validity.valid) {
+// 	showErrorPassword();
+// 	event.preventDefault();
+//   }
+// });
+
+// function showErrorEmail() {
+//   if(email.validity.valueMissing) {
+//     // If the field is empty
+//     // display the following error message.
+//     emailError.textContent = 'You need to enter an e-mail address.';
+//   } else if(email.validity.typeMismatch) {
+//     // If the field doesn't contain an email address
+//     // display the following error message.
+//     emailError.textContent = 'Entered value needs to be an e-mail address.';
+//   } else if(email.validity.tooShort) {
+//     // If the data is too short
+//     // display the following error message.
+//     emailError.textContent = `Email should be at least ${ email.minLength } characters; you entered ${ email.value.length }.`;
+//   } 
+
+//   // Set the styling appropriately
+//   emailError.className = 'error active';
+// }
+
+// function showErrorPassword() {
+//   if(password.validity.valueMissing) {
+//     // If the field is empty
+//     // display the following error message.
+//     passwordError.textContent = 'You need to enter a password.';
+//   } else if(password.validity.typeMismatch) {
+//     // If the field doesn't contain an email address
+//     // display the following error message.
+//     passwordError.textContent = 'Password must contain Capital,Simple, ';
+//   } else if(email.validity.tooShort) {
+//     // If the data is too short
+//     // display the following error message.
+//     passwordError.textContent = `Password should be at least ${ password.minLength } characters; you entered ${ password.value.length }.`;
+//   } 
+
+//   // Set the styling appropriately
+//   passwordError.className = 'error active';
+// }
+
+
+// </script>
+
+
+<!--============================================================================-->
+
+<!--==================================================================================-->
 
 </body>
 </html>
