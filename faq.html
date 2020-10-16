@@ -164,7 +164,7 @@
     
                     <li>
                         <div class="right-top-bar flex-w h-full">
-                            <a href="#" class="flex-c-m p-lr-10 trans-04">
+                            <a href="faq.html" class="flex-c-m p-lr-10 trans-04">
                                 Help & FAQs
                             </a>
     
@@ -197,7 +197,7 @@
                     </li>
     
                     <li>
-                        <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
+                        <a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Deals</a>
                     </li>
     
                     <li>
@@ -567,7 +567,15 @@
 		});
 	</script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Toggle Collapse
+$('.faq li .question').click(function () {
+  $(this).find('.plus-minus-toggle').toggleClass('collapsed');
+  $(this).parent().toggleClass('active');
+});
+    </script>
 	
 </body>
 </html>
