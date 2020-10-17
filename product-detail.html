@@ -34,6 +34,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/wishlist.css">
     <!--===============================================================================================-->
 </head>
 
@@ -42,342 +43,241 @@
     <!-- Header -->
     <header class="header-v4">
         <!-- Header desktop -->
-		<div class="container-menu-desktop">
-			<!-- Topbar -->
-			<div class="top-bar">
-				<div class="content-topbar flex-sb-m h-full container">
-					<div class="left-top-bar">
-						Free shipping for orders over LKR 5000.00
-					</div>
+        <div class="container-menu-desktop">
+            <!-- Topbar -->
+            <div class="top-bar">
+                <div class="content-topbar flex-sb-m h-full container">
+                    <div class="left-top-bar">
+                        Free shipping for orders over LKR 5000.00
+                    </div>
 
-					<div class="right-top-bar flex-w h-full">
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
+                    <div class="right-top-bar flex-w h-full">
+                        <a href="faq.html" class="flex-c-m trans-04 p-lr-25">
 							Help & FAQs
 						</a>
-							
-						<a href="login.html" class="flex-c-m trans-04 p-lr-25">
+
+                        <a href="login.html" class="flex-c-m trans-04 p-lr-25">
 							Login
 						</a>
-						<a href="register.html" class="flex-c-m trans-04 p-lr-25">
+                        <a href="register.html" class="flex-c-m trans-04 p-lr-25">
 							Register
 						</a>
-						
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
+
+                        <a href="#" class="flex-c-m trans-04 p-lr-25">
 							EN
 						</a>
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
+                        <a href="#" class="flex-c-m trans-04 p-lr-25">
 							LKR
 						</a>
 
-					</div>
-				</div>
-			</div>
-
                     </div>
                 </div>
             </div>
 
-            <div class="wrap-menu-desktop how-shadow1">
-                <nav class="limiter-menu-desktop container">
+        </div>
+        </div>
+        </div>
 
-                    <!-- Logo desktop -->
-                    <a href="index.html" class="logo">
-                        <img src="images/icons/logo-01.png" alt="IMG-LOGO">
-                    </a>
+       
 
-                    <!-- Menu desktop -->
-                    <div class="menu-desktop">
-                        <ul class="main-menu">
-                            <li>
-                                <a href="index.html">Home</a>
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m">
+                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+                        <i class="zmdi zmdi-search"></i>
+                    </div>
 
-                            </li>
 
-                            <li>
-                                <a href="product.html">Shop</a>
-                            </li>
+                    <div class="wrap-menu-desktop how-shadow1">
+                        <nav class="limiter-menu-desktop container">
 
-                            <li>
-								<a href="offer-page.html">Deals</a>
-							</li>
+                            <!-- Logo desktop -->
+                            <a href="index.html" class="logo">
+                                <img src="images/icons/logo-01.png" alt="IMG-LOGO">
+                            </a>
 
-                            <li>
-                                <a href="about.html">About</a>
-                            </li>
+                            <!-- Menu desktop -->
+                            <div class="menu-desktop">
+                                <ul class="main-menu">
+                                    <li class="active-menu">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="product.html">Shop</a>
+                                    </li>
 
-                            <li>
-                                <a href="contact.html">Contact</a>
-                            </li>
-                        </ul>
+                                    <li class="label1" data-label1="hot">
+                                        <a href="offer-page.html">Deals</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Icon header -->
+                            <div class="wrap-icon-header flex-w flex-r-m h-full">
+                                <div class="flex-c-m h-full p-r-24">
+                                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
+                                        <i class="zmdi zmdi-search"></i>
+                                    </div>
+                                </div>
+
+                                <div class="flex-c-m h-full p-l-18 p-r-25 bor5">
+                                    <div id="test" class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart " data-toggle="modal" data-notify="0">
+                                        <i class="zmdi zmdi-shopping-cart"></i>
+                                    </div>
+                                </div>
+
+                                <div class="flex-c-m h-full p-r-24">
+                                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11">
+                                        <a href="wishlist.html" class="zmdi zmdi-favorite"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Header Mobile -->
+                <div class="wrap-header-mobile">
+                    <!-- Logo moblie -->
+                    <div class="logo-mobile">
+                        <a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
                     </div>
 
                     <!-- Icon header -->
-                    <div class="wrap-icon-header flex-w flex-r-m">
-                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+                    <div class="wrap-icon-header flex-w flex-r-m m-r-15">
+                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
                             <i class="zmdi zmdi-search"></i>
                         </div>
 
+                        <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" data-notify="2">
+                            <i class="zmdi zmdi-shopping-cart"></i>
+                        </div>
 
-			<div class="wrap-menu-desktop how-shadow1">
-				<nav class="limiter-menu-desktop container">
-					
-					<!-- Logo desktop -->		
-					<a href="index.html" class="logo">
-						<img src="images/icons/logo-01.png" alt="IMG-LOGO">
-					</a>
+                        <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti" data-notify="0">
+                            <i class="zmdi zmdi-favorite-outline"></i>
+                        </a>
+                    </div>
 
-					<!-- Menu desktop -->
-					<div class="menu-desktop">
-						<ul class="main-menu">
-							<li class="active-menu">
-								<a href="index.html">Home</a>
-                            </li>
-                        
-							<li>
-								<a href="product.html">Shop</a>
-							</li>
-
-							<li class="label1" data-label1="hot">
-								<a href="shoping-cart.html">Deals</a>
-							</li>
-
-							<li>
-								<a href="about.html">About</a>
-							</li>
-
-							<li>
-								<a href="contact.html">Contact</a>
-							</li>
-						</ul>
-					</div>
-
-					<!-- Icon header -->
-					<div class="wrap-icon-header flex-w flex-r-m h-full">
-						<div class="flex-c-m h-full p-r-24">
-							<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 js-show-modal-search">
-								<i class="zmdi zmdi-search"></i>
-							</div>
-						</div>
-							
-						<div class="flex-c-m h-full p-l-18 p-r-25 bor5">
-							<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
-								<i class="zmdi zmdi-shopping-cart"></i>
-							</div>
-						</div>
-							
-					</div>
-				</nav>
-			</div>	
+                    <!-- Button show menu -->
+			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</div>
 		</div>
 
-        <!-- Header Mobile -->
-        <div class="wrap-header-mobile">
-            <!-- Logo moblie -->
-            <div class="logo-mobile">
-                <a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
-            </div>
 
-            <!-- Icon header -->
-            <div class="wrap-icon-header flex-w flex-r-m m-r-15">
-                <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search">
-                    <i class="zmdi zmdi-search"></i>
-                </div>
+		<!-- Menu Mobile -->
+		<div class="menu-mobile">
+			<ul class="main-menu-m">
+				<li>
+					<a href="index.html">Home</a>
 
-                <div class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart" data-notify="2">
-                    <i class="zmdi zmdi-shopping-cart"></i>
-                </div>
-
-                <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti" data-notify="0">
-                    <i class="zmdi zmdi-favorite-outline"></i>
-                </a>
-            </div>
-
-            <!-- Button show menu -->
-            <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-                <span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-                </span>
-            </div>
-        </div>
-
-
-        <!-- Menu Mobile -->
-        <div class="menu-mobile">
-            <ul class="topbar-mobile">
-                <li>
-                    <div class="left-top-bar">
-                        Free shipping for standard order over LKR 100
-                    </div>
-                </li>
-
-                <li>
-                    <div class="right-top-bar flex-w h-full">
-                        <a href="#" class="flex-c-m p-lr-10 trans-04">
-							Help & FAQs
-						</a>
-
-                        <a href="#" class="flex-c-m p-lr-10 trans-04">
-							My Account
-						</a>
-
-                        <a href="#" class="flex-c-m p-lr-10 trans-04">
-							EN
-						</a>
-
-                        <a href="#" class="flex-c-m p-lr-10 trans-04">
-							LKR 
-						</a>
-                    </div>
-                </li>
-            </ul>
-
-            <ul class="main-menu-m">
-                <li>
-                    <a href="index.html">Home</a>
-
-                    <span class="arrow-main-menu-m">
+					<span class="arrow-main-menu-m">
 						<i class="fa fa-angle-right" aria-hidden="true"></i>
 					</span>
-                </li>
+				</li>
 
-                <li>
-                    <a href="product.html">Shop</a>
-                </li>
+				<li>
+					<a href="product.html">Shop</a>
+				</li>
 
-                <li>
-                    <a href="offer-page.html">Deals</a>
-                </li>
+				<li class="active-menu">
+					<a href="offer-page.html">Deals</a>
+				</li>
 
-                <li>
-                    <a href="about.html">About</a>
-                </li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
 
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
 
-        <!-- Modal Search -->
-        <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
-            <div class="container-search-header">
-                <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+                <!-- Modal Search -->
+                <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+                    <div class="container-search-header">
+                        <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
 					<img src="images/icons/icon-close2.png" alt="CLOSE">
 				</button>
 
-                <form class="wrap-search-header flex-w p-l-15">
-                    <button class="flex-c-m trans-04">
+                        <form class="wrap-search-header flex-w p-l-15">
+                            <button class="flex-c-m trans-04">
 						<i class="zmdi zmdi-search"></i>
 					</button>
-                    <input class="plh3" type="text" name="search" placeholder="Search...">
-                </form>
-            </div>
-        </div>
+                            <input class="plh3" type="text" name="search" placeholder="Search...">
+                        </form>
+                    </div>
+                </div>
     </header>
 
     <!-- Cart -->
-	<div class="wrap-header-cart js-panel-cart">
-		<div class="s-full js-hide-cart"></div>
+    <div class="wrap-header-cart js-panel-cart">
+        <div class="s-full js-hide-cart"></div>
 
-		<div class="header-cart flex-col-l p-l-65 p-r-25">
-			<div class="header-cart-title flex-w flex-sb-m p-b-8">
-				<span class="mtext-103 cl2">
+        <div class="header-cart flex-col-l p-l-65 p-r-25">
+            <div class="header-cart-title flex-w flex-sb-m p-b-8">
+                <span class="mtext-103 cl2">
 					Your Cart
 				</span>
 
-				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
-					<i class="zmdi zmdi-close"></i>
-				</div>
-			</div>
-			
-			<div class="header-cart-content flex-w js-pscroll">
-				<ul class="header-cart-wrapitem w-full">
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-01.jpg" alt="IMG">
-						</div>
+                <div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart closebtn">
+                    <i class="zmdi zmdi-close"></i>
+                </div>
+            </div>
 
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Esprit Ruffle Shirt
-							</a>
+            <button class="clear-cart btn btn-danger">Clear Cart</button>
 
-							<span class="header-cart-item-info">
-								1 x LKR 1500.00
-							</span>
-						</div>
-					</li>
+            <!-- Modal -->
 
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-02.jpg" alt="IMG">
-						</div>
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content tableview">
 
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Converse All Star
-							</a>
+                    <div class="modal-body">
+                        <table class="show-cart table">
 
-							<span class="header-cart-item-info">
-								1 x LKR 5000.00
-							</span>
-						</div>
-					</li>
+                        </table>
 
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/item-cart-03.jpg" alt="IMG">
-						</div>
+                    </div>
+                </div>
 
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Vintage Inspired Classic
-							</a>
+            </div>
 
-							<span class="header-cart-item-info">
-								1 x LKR 3750.00
-							</span>
-						</div>
-					</li>
-				</ul>
-				
-				<div class="w-full">
-					<div class="header-cart-total w-full p-tb-40">
-						Total: LKR 10550.00
-					</div>
 
-					<div class="header-cart-buttons flex-w w-full">
-						<a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
+
+
+
+
+
+            <div class="header-cart-content flex-w js-pscroll">
+
+                <div class="w-full">
+                    <div class="header-cart-total w-full p-tb-40">
+                        <div>Total price: LKR <span class="total-cart"></span></div>
+                    </div>
+
+                    <div class="header-cart-buttons flex-w w-full">
+                        <a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
 							View Cart
 						</a>
 
-						<a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+                        <a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
 							Check Out
 						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-<!-- breadcrumb -->
-    <div class="container">
-        <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
-            <a href="index.html" class="stext-109 cl8 hov-cl1 trans-04">
-				Home
-				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
-			</a>
-
-            <a href="product.html" class="stext-109 cl8 hov-cl1 trans-04">
-				Men
-				<i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
-			</a>
-
-            <span class="stext-109 cl4">
-				Lightweight Jacket
-			</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -434,7 +334,7 @@
                         </h4>
 
                         <span class="mtext-106 cl2">
-							LKR 58.79
+							LKR 4500.00
                         </span>
 
                         <br><br>
@@ -499,7 +399,7 @@
                                         </div>
                                     </div>
 
-                                    <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail">
+                                    <button class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 js-addcart-detail add-to-cart" data-name='Menspoloshirt' data-price="16 " data-src="images/item-cart-05.jpg ">
 										Add to cart
                                     </button>
                                 </div>
@@ -562,7 +462,7 @@
                                         <!-- Review -->
                                         <div class="flex-w flex-t p-b-68">
                                             <div class="wrap-pic-s size-109 bor0 of-hidden m-r-18 m-t-6">
-                                                <img src="images/avatar-01.jpg" alt="AVATAR">
+                                                <img src="images/review-09.jpg" alt="AVATAR">
                                             </div>
 
                                             <div class="size-207">
@@ -581,7 +481,7 @@
                                                 </div>
 
                                                 <p class="stext-102 cl6">
-                                                   Awesome product.Exellent seller.I recommend 100/100.Thank you. 
+                                                    Awesome product.Exellent seller.I recommend 100/100.Thank you.
                                                 </p>
                                             </div>
                                         </div>
@@ -631,7 +531,7 @@
                                             <button class="flex-c-m stext-101 cl0 size-112 bg7 bor11 hov-btn3 p-lr-15 trans-04 m-b-10">
 												Submit
                                             </button>
-                                         </form>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -695,7 +595,7 @@
 									</a>
 
                                     <span class="stext-105 cl3">
-										LKR 16.64
+										LKR 1600.00
 									</span>
                                 </div>
 
@@ -727,7 +627,7 @@
 									</a>
 
                                     <span class="stext-105 cl3">
-										LKR 35.31
+										LKR 3500.00
 									</span>
                                 </div>
 
@@ -759,7 +659,7 @@
 									</a>
 
                                     <span class="stext-105 cl3">
-										LKR 25.50
+										LKR 2500.00
 									</span>
                                 </div>
 
@@ -791,7 +691,7 @@
 									</a>
 
                                     <span class="stext-105 cl3">
-										LKR 75.00
+										LKR 7500.00
 									</span>
                                 </div>
 
@@ -823,7 +723,7 @@
 									</a>
 
                                     <span class="stext-105 cl3">
-										LKR 34.75
+										LKR 4800.00
 									</span>
                                 </div>
 
@@ -855,7 +755,7 @@
 									</a>
 
                                     <span class="stext-105 cl3">
-										LKR 93.20
+										LKR 4800.00
 									</span>
                                 </div>
 
@@ -887,7 +787,7 @@
 									</a>
 
                                     <span class="stext-105 cl3">
-										LKR 52.66
+										LKR 2550.00
 									</span>
                                 </div>
 
@@ -919,7 +819,7 @@
 									</a>
 
                                     <span class="stext-105 cl3">
-										LKR 18.96
+										LKR 3800.00
 									</span>
                                 </div>
 
@@ -981,25 +881,25 @@
 
                     <ul>
                         <li class="p-b-10">
-                            <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                            <a href="order-tracking.html" class="stext-107 cl7 hov-cl1 trans-04">
 								Track Order
 							</a>
                         </li>
 
                         <li class="p-b-10">
-                            <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-								Returns 
+                            <a href="profile.html" class="stext-107 cl7 hov-cl1 trans-04">
+								My Account 
 							</a>
                         </li>
 
                         <li class="p-b-10">
-                            <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-								Shipping
+                            <a href="wishlist.html" class="stext-107 cl7 hov-cl1 trans-04">
+								Wishlist
 							</a>
                         </li>
 
                         <li class="p-b-10">
-                            <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
+                            <a href="faq.html" class="stext-107 cl7 hov-cl1 trans-04">
 								FAQs
 							</a>
                         </li>
@@ -1012,7 +912,7 @@
                     </h4>
 
                     <p class="stext-107 cl7 size-201">
-                        Any questions? Address here or Call us on (+94) 78 7988 613</p>
+                        Any questions? Let us know in store at 8th floor, 379 Hudson St, Sri Lanka or call us on (+94) 94 716 6879</p>
 
                     <div class="p-t-27">
                         <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
@@ -1036,7 +936,7 @@
 
                     <form>
                         <div class="wrap-input1 w-full p-b-4">
-                            <input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
+                            <input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="hawaiiclothing@gmail.com">
                             <div class="focus-input1 trans-04"></div>
                         </div>
 
@@ -1152,11 +1052,11 @@
                             </h4>
 
                             <span class="mtext-106 cl2">
-								LKR  58.79
+								LKR  4500.00
 							</span>
 
                             <p class="stext-102 cl3 p-t-23">
-                                Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+                                2020 NEW T Shirt PrintPro Hollywood Undead Men Regular Fit Cotton Summer Man Tops Tees Summer 100% Cotton
                             </p>
 
                             <!--  -->
@@ -1347,6 +1247,7 @@
     </script>
     <!--===============================================================================================-->
     <script src="js/main.js"></script>
+    <script src="js/wishlist.js "></script>
 
 </body>
 
