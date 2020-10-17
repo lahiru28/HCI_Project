@@ -278,20 +278,32 @@
                             <div class="form-row mb-4">
                                 <div class="col">
                                     <!-- First name -->
+
+                                     <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder=" First name" required>
+                                </div>
+                                <div class="col">
+                                    <!-- Last name -->
+                                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder=" Last name" required>
+
 								<input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name" required>
                                 </div>
                                 <div class="col">
                                     <!-- Last name -->
 									<input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name" required >
 								
+
                                 </div>
                             </div>
                             <div class="form-row mb-4">
                                 <div class="col">
                                     <!-- Email -->
 
+                                     <input type="text" id="defaultRegisterFormEmail" class="form-control" placeholder="Email" required='should not contain capitals'>
+
+
 									 <input type="email" id="defaultRegisterFormEmail" class="form-control" placeholder="Email" required>
 									 
+
                                 </div>
                             </div>
                             <div class="form-row mb-4">
@@ -334,6 +346,12 @@
                                 </div>
 							</div>
 
+
+						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer register js-register" onclick="swal('ok')">
+							Sign Up
+						</button>
+					</form>
+
 							<br>
 							<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer register" type="submit">Sign Up</button>
 							<br>
@@ -344,6 +362,7 @@
 						</div>
 						
 					</form> 
+ 
 				</div>
 
 			</div>
@@ -575,6 +594,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				swal(nameProduct, "is added to wishlist !", "success");
 
 				$(this).addClass('js-addedwish-detail');
+				$(this).off('click');
+			});
+		});
+
+		$('.js-register').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.js-register').html();
+
+			$(this).on('click', function(){
+				swal(nameProduct, "Registering Success!", "success");
+
+				$(this).addClass('js-register');
 				$(this).off('click');
 			});
 		});
