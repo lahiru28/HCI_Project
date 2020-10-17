@@ -348,14 +348,14 @@
 						</h4>
 
 						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" name="email" placeholder="Your Email Address" required='should not contain capitals'>
 							<!-- <img class="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON"> -->
 						</div>
 						<div class="bor8 m-b-20 how-pos4-parent">
-							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="password" name="pass" placeholder="Password Here">
+							<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="password" name="pass" placeholder="Password Here" required='Minimum 5 charecters'>
 							<!-- <img class="how-pos4 pointer-none" src="images/icons/icon-email.png" alt="ICON"> -->
 						</div>
-						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer"> 
+						<button class="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer js-login"> 
 							Login
 						</button>
 					</form>
@@ -570,7 +570,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!--===============================================================================================-->
 	<script src="vendor/sweetalert/sweetalert.min.js"></script>
 	<script>
-		$('.js-addwish-b2, .js-addwish-detail').on('click', function(e){
+		$('.js-addwish-b2, .js-addwish-detail, .js-login').on('click', function(e){
 			e.preventDefault();
 		});
 
@@ -591,6 +591,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				swal(nameProduct, "is added to wishlist !", "success");
 
 				$(this).addClass('js-addedwish-detail');
+				$(this).off('click');
+			});
+		});
+
+		$('.js-login').each(function(){
+			var nameProduct = $(this).parent().parent().parent().find('.js-login').html();
+
+			$(this).on('click', function(){
+				swal(nameProduct, "Loggin Success!", "success");
+
+				$(this).addClass('js-login');
 				$(this).off('click');
 			});
 		});
